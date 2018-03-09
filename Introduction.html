@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../../../favicon.ico">-->
+
+    <!-- MapBox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Prisms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" >
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.js'></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">MAPINS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Introduction.html">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="GettingStart.html">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Download.html">Download</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="People.html">People</a>
+            </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">-->
+            <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!--</form>-->
+    </div>
+</nav>
+
+<main role="main">
+
+    <div class="container">
+        <h1 style="padding-top: 15px">Introduction</h1>
+        <br>
+        <!-- Example row of columns -->
+        <p style="padding-left: 20px;font-size: 18px;text-indent: 36px">
+                Air quality models are important for studying the impact of air
+            pollutant on health conditions at a fine spatiotemporal scale. Existing
+            work typically relies on area-specific, expert-selected attributes
+            of pollution emissions (e,g., transportation) and dispersion (e.g.,
+            meteorology) for building the model for each combination of study
+            areas, pollutant types, and spatiotemporal scales. In this paper,
+            we present a data mining approach that utilizes publicly available
+            OpenStreetMap (OSM) data to automatically generate an air quality
+            model for the concentrations of fine particulate matter less than 2.5
+            μm in aerodynamic diameter at various temporal scales. Our experiment
+            shows that our (domain-) expert-free model could generate
+            accurate PM2.5 concentration predictions, which can be used to
+            improve air quality models that traditionally rely on expert-selected
+            input. Our approach also quantities the impact on air quality from a
+            variety of geographic features (i.e., how various types of geographic
+            features such as parking lots and commercial buildings affect air
+            quality and from what distance) representing mobile, stationary
+            and area natural and anthropogenic air pollution sources. This
+            approach is particularly important for enabling the construction of
+            context-specific spatiotemporal models of air pollution, allowing
+            investigations of the impact of air pollution exposures on sensitive
+            populations such as children with asthma at scale.
+        </p>
+	<br>
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+    <p>&copy; Spatial Sciences Institute 2018</p>
+    <p>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</body>
+</html>

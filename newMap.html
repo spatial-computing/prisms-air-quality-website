@@ -1,0 +1,176 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../../../favicon.ico">-->
+
+    <!-- MapBox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Prisms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" >
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.js'></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">PRISMS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Features.html">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="GettingStart.html">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Download.html">Download</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="People.html">People</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="newMap.html">newMap</a>
+            </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">-->
+            <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!--</form>-->
+    </div>
+</nav>
+
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container" style="padding-bottom: 2.5rem">
+        <h1 style="padding: 15px">New Test Map</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <input type="range" min="0" max="8760" step="1" value="6480" class="slider" id="timeRange">
+            </div>
+            <div class="col-md-2" style="font-size: 15px">
+                <p style="text-align: center"><span id="timeSelected">2017-04-28 00:00:00</span></p>
+            </div>
+            <div>
+                <p style="text-align: center"><span id="alertMsg"></span></p>
+            </div>
+            <!--<div class="col-md-2" style="text-align: center">-->
+            <!--<button class="btn btn-outline-success bd-popover my-2 my-sm-0" style="padding-bottom: 5px" data-toggle="popover" data-placement="bottom" title="Sad" data-content="No Layer at this time" id="loadButton" onclick="LoadLayer()">Load Layer</button>-->
+            <!--</div>-->
+        </div>
+
+        <!--<div class="row">-->
+            <!--<div class="col-md-12" >-->
+                <!--<table align="center" style="background-color: lightgray;border-color: lightgray">-->
+                    <!--<tr>-->
+                        <!--<td class="aqiStandardChart"> 10 </td>-->
+                        <!--<td style="color: White">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 20 </td>-->
+                        <!--<td style="color: Green">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 30 </td>-->
+                        <!--<td style="color: Yellow">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 40 </td>-->
+                        <!--<td style="color: Orange">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 50 </td>-->
+                        <!--<td style="color: Red">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 60 </td>-->
+                        <!--<td style="color: Purple">&#x2588</td>-->
+                        <!--<td class="aqiStandardChart"> 70 </td>-->
+                        <!--<td style="color: Maroon;padding-right: 5px">&#x2588</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<iframe frameborder="0" width="400" height="400" src="http://blog.csdn.net/cuew1987" scrolling="no"></iframe>-->
+
+        <!--<div style="padding-top: 10px">-->
+            <!--<div id='map' style='width: 100%; height: 0px;padding-bottom:100%'></div>-->
+        <!--</div>-->
+        <div>
+
+            <iframe frameborder="0" width="1000" height="800"  src="" name="iframe_a"></iframe>
+	    <p><a href="localhost:8083" target="iframe_a">Load Frame</a></p>
+        </div>
+
+
+        <!--<label id='Time'>2016-08-01 00:00:00</label>-->
+        <!--<div style='width:100%'>-->
+        <!--<input id='slider' type='range' min='0' max='8760' step='1' value='0'/>-->
+        <!--</div>-->
+    </div>
+
+    <hr>
+
+    <!--<div class="container">-->
+    <!--&lt;!&ndash; Example row of columns &ndash;&gt;-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+    <!--<h2>Yijun</h2>-->
+    <!--<p>Yijun is intelligent</p>-->
+    <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+    <!--<h2>Yijun</h2>-->
+    <!--<p>Yijun is beautiful</p>-->
+    <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+    <!--<h2>Yijun</h2>-->
+    <!--<p>Yijun is famous</p>-->
+    <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<hr>-->
+
+    <!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+
+</main>
+
+<footer class="container">
+    <p>&copy; Spatial Sciences Institute 2018</p>
+    <p>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script src="js/loadLayers.js"></script>
+<script src="js/mapbox.js"></script>
+<script src="js/timeSlider.js"></script>
+
+</body>
+</html>
